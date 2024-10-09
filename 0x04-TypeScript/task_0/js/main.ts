@@ -6,17 +6,17 @@ interface Student {
 }
 
 const student1: Student = {
-	firstName: "Zeliq",
-	lastName: "Shannon",
-	age: 40,
-	location: "Nakuru"
+	firstName: "Joe",
+	lastName: "Doe",
+	age: 36,
+	location: "Alexandria"
 };
 
 const student2: Student = {
         firstName: "John",
         lastName: "Doe",
-        age: 37,
-        location: "Nairobi"
+        age: 30,
+        location: "Cairo"
 };
 
 const studentsList: Student[] = [student1, student2];
@@ -24,7 +24,7 @@ const studentsList: Student[] = [student1, student2];
 const table = document.createElement('table');
 const tbody = document.createElement('tbody');
 
-table.style.background = "pink";
+table.style.background = "Black";
 table.appendChild(tbody);
 
 studentsList.forEach((student: Student): void => {
@@ -35,8 +35,8 @@ studentsList.forEach((student: Student): void => {
   nameCell.textContent = student.firstName;
   locationCell.textContent = student.location;
 
-  nameCell.style.border = "1px solid pink";
-  locationCell.style.border = "1px solid pink";
+  nameCell.style.border = "1px solid white";
+  locationCell.style.border = "1px solid white";
   nameCell.style.padding = "5px";
   locationCell.style.padding = "5px";
 
